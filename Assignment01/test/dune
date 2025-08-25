@@ -1,0 +1,4 @@
+(test
+ (name test_nat)
+ (modules test_nat)
+ (libraries assignment01 alcotest))
