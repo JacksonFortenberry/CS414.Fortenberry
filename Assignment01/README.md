@@ -25,7 +25,7 @@ opam install dune alcotest -y
 dune build
 dune runtest
 
-Expected output:
+Question1 output:
 Test Successful … 6 tests run.
 
 Design Notes
