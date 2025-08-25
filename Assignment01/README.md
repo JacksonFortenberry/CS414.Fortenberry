@@ -67,4 +67,7 @@ Prompt used:
 
 “Provide OCaml functions with two variables that implement Peano’s axioms for multiplication and division.”
 
-I did not blindly copy code. I reviewed, rewrote, and tested the functions myself to ensure they are correct, purely structural, and consistent with lecture notes. This submission contains only immutable, recursive definitions that respect Peano’s axioms.
+I used ChatGPT
+I reviewed, rewrote, and tested the functions myself to ensure they are correct, purely structural, and consistent with lecture notes.
+This submission contains only immutable, recursive definitions that respect Peano’s axioms.
+ 
