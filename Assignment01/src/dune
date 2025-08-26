@@ -1,1 +1,14 @@
-(library (name assignment01) (modules question1) (inline_tests) (preprocess (pps ppx_inline_test)))
+(library
+ (name assignment01)
+ (modules question1)
+ (inline_tests)
+ (preprocess (pps ppx_inline_test)))
+
+(executable
+ (name main)
+ (modules main)
+ (libraries assignment01))
+
+(executable 
+(name question2) 
+(modules question2))
