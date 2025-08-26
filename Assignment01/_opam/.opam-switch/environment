@@ -1,8 +1,8 @@
-OPAM_SWITCH_PREFIX	=	/home/jacks/Assignment01/_opam	Prefix\ of\ the\ current\ opam\ switch
-CAML_LD_LIBRARY_PATH	=	/home/jacks/Assignment01/_opam/lib/stublibs	Updated\ by\ package\ ocaml-base-compiler
-OCAMLTOP_INCLUDE_PATH	+=	/home/jacks/Assignment01/_opam/lib/toplevel	Updated\ by\ package\ ocaml
-CAML_LD_LIBRARY_PATH	=	/home/jacks/Assignment01/_opam/lib/ocaml/stublibs:/home/jacks/Assignment01/_opam/lib/ocaml	Updated\ by\ package\ ocaml
-CAML_LD_LIBRARY_PATH	+=	/home/jacks/Assignment01/_opam/lib/stublibs	Updated\ by\ package\ ocaml
-OCAML_TOPLEVEL_PATH	=	/home/jacks/Assignment01/_opam/lib/toplevel	Updated\ by\ package\ ocaml
-MANPATH	=:	/home/jacks/Assignment01/_opam/man	Current\ opam\ switch\ man\ dir
-PATH	=+=	/home/jacks/Assignment01/_opam/bin	Binary\ dir\ for\ opam\ switch\ /home/jacks/Assignment01
+OPAM_SWITCH_PREFIX	=	/home/jacks/CS414.Fortenberry/Assignment01/_opam	Prefix\ of\ the\ current\ opam\ switch
+CAML_LD_LIBRARY_PATH	=	/home/jacks/CS414.Fortenberry/Assignment01/_opam/lib/stublibs	Updated\ by\ package\ ocaml-base-compiler
+OCAMLTOP_INCLUDE_PATH	+=	/home/jacks/CS414.Fortenberry/Assignment01/_opam/lib/toplevel	Updated\ by\ package\ ocaml
+CAML_LD_LIBRARY_PATH	=	/home/jacks/CS414.Fortenberry/Assignment01/_opam/lib/ocaml/stublibs:/home/jacks/CS414.Fortenberry/Assignment01/_opam/lib/ocaml	Updated\ by\ package\ ocaml
+CAML_LD_LIBRARY_PATH	+=	/home/jacks/CS414.Fortenberry/Assignment01/_opam/lib/stublibs	Updated\ by\ package\ ocaml
+OCAML_TOPLEVEL_PATH	=	/home/jacks/CS414.Fortenberry/Assignment01/_opam/lib/toplevel	Updated\ by\ package\ ocaml
+MANPATH	=:	/home/jacks/CS414.Fortenberry/Assignment01/_opam/man	Current\ opam\ switch\ man\ dir
+PATH	=+=	/home/jacks/CS414.Fortenberry/Assignment01/_opam/bin	Binary\ dir\ for\ opam\ switch\ /home/jacks/CS414.Fortenberry/Assignment01

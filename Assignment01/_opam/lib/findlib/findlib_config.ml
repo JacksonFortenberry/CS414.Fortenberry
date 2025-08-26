@@ -52,7 +52,7 @@ let install_dir_from_opam_switch_prefix path =
   | false -> None
   | true -> Some path
 
-let default = "/home/jacks/Assignment01/_opam/lib/findlib.conf"
+let default = "/home/jacks/CS414.Fortenberry/Assignment01/_opam/lib/findlib.conf"
 let fallback = Option.value ~default
 
 let rec try_vars = function
@@ -94,7 +94,7 @@ let ocaml_has_meta_files =
     String.sub Sys.ocaml_version 0 (String.index Sys.ocaml_version '.') in
   int_of_string ocaml_major >= 5;;
 
-let ocaml_stdlib = "/home/jacks/Assignment01/_opam/lib/ocaml";;
+let ocaml_stdlib = "/home/jacks/CS414.Fortenberry/Assignment01/_opam/lib/ocaml";;
 
 let ocaml_ldconf = ocaml_stdlib / "ld.conf";;
 

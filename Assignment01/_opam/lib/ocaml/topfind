@@ -96,12 +96,12 @@ let location =
     ("OCAML_TOPLEVEL_PATH", install_dir_from_ocaml_toplevel_path);
   ] with
   | Some location -> location
-  | None -> "/home/jacks/Assignment01/_opam/lib"
+  | None -> "/home/jacks/CS414.Fortenberry/Assignment01/_opam/lib"
 in
 
 let findlib_directory = match false with
   | true -> location / "lib" / "findlib"
-  | false -> "/home/jacks/Assignment01/_opam/lib/findlib"
+  | false -> "/home/jacks/CS414.Fortenberry/Assignment01/_opam/lib/findlib"
 in
 
 let () = Topdirs.dir_directory findlib_directory in
