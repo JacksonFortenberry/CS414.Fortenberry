@@ -25,8 +25,10 @@ opam install dune alcotest -y
 dune build
 dune runtest
 
-Question1 output:
+Question1
 Test Successful … 6 tests run.
+Output for Question1:
+9 / 4 = 2, 9 % 4 = 19 / 4 = 2, 9 % 4 = 1 
 
 Design Notes
 
