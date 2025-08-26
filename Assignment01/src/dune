@@ -9,6 +9,6 @@
  (modules main)
  (libraries assignment01))
 
-(executable 
-(name question2) 
-(modules question2))
+(executable
+ (name question2)
+ (modules question2))
