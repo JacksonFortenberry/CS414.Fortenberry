@@ -2,6 +2,22 @@
 
 This assignment implements Peano naturals with addition, multiplication, division (quotient), and remainder using **pure structural recursion** (no mutation).
 
+# CS414 – Assignment01 • Question 2
+
+## Overview
+Implements a **binary tree** in OCaml with two recursive functions:
+
+- `prune : 'a tree -> 'a tree`  
+  Returns a new tree with all **original leaves** removed.
+- `level_traversal : 'a tree -> 'a list`  
+  Breadth-first (level-order) traversal returning a **flat list** left-to-right.
+
+Tree type:
+```ocaml
+type 'a tree =
+  | Leaf
+  | Node of 'a * 'a tree * 'a tree
+
 ---
 
 ## Build & Test
@@ -25,51 +41,55 @@ opam install dune alcotest -y
 dune build
 dune runtest
 
-Question1
+Question 1
 Test Successful … 6 tests run.
 Output for Question1:
-9 / 4 = 2, 9 % 4 = 19 / 4 = 2, 9 % 4 = 1 
+9 / 4 = 2, 9 % 4 = 19 / 4 = 2, 9 % 4 = 1
+Question 2
+OUtput:
+Level order: 1 2 3 4 5 6
+After prune: 1 2 3
 
-Design Notes
+## Question 1 – Peano Arithmetic
 
-add: recursive on the first argument, add (S x) y = S (add x y).
+### Design Notes
+- **add**: recursive on the first argument, `add (S x) y = S (add x y)`.
+- **mul**: defined by repeated addition, `mul (S x) y = add y (mul x y)`.
+- **sub**: subtraction clamped at 0 (`Z`).
+- **div**: quotient by repeated subtraction (`div Z y = Z`, `div x Z` raises).
+- **rem**: remainder by repeated subtraction (`rem x y < y`).
 
-mul: defined by repeated addition, mul (S x) y = add y (mul x y).
+All functions are **structurally recursive only**, with no mutation.
 
-sub: subtraction clamped at 0 (Z).
+### Proof Sketches
+**Addition**
+- Base: `add Z y = y`.
+- Step: Assume `add x y` is correct. Then  
+  `add (S x) y = S (add x y)`, which preserves correctness.
 
-div: quotient by repeated subtraction (div Z y = Z, div x Z raises).
+**Multiplication**
+- Base: `mul Z y = Z`.
+- Step: Assume `mul x y` is correct. Then  
+  `mul (S x) y = add y (mul x y)`, which agrees with the definition.
 
-rem: remainder by repeated subtraction (rem x y < y).
+Thus both addition and multiplication follow Peano’s axioms.
 
-All functions are structural recursive only, no mutation.
+---
 
-Proof Sketches
-Addition
+## Question 2 – Binary Tree: Prune and Level Traversal
 
-Base: add Z y = y.
+### Design Notes
+- **Tree type**:  
+  ```ocaml
+  type 'a tree =
+    | Leaf
+    | Node of 'a * 'a tree * 'a tree
 
-Step: Assume add x y is correct. Then
-add (S x) y = S (add x y), which preserves correctness.
-
-Multiplication
-
-Base: mul Z y = Z.
-
-Step: Assume mul x y is correct. Then
-mul (S x) y = add y (mul x y), which agrees with the definition.
-
-Thus both follow Peano’s axioms.
-
-Sources / Acknowledgment
-
-I consulted ChatGPT to help structure the Dune project and check that my recursive definitions matched Peano’s axioms.
-
-Prompt used:
-
+Sources / Acknowledgment:
+Code style and recursion patterns inspired by class lectures.
+I consulted ChatGPT to help structure the Dune project and to double-check recursive definitions for both Peano arithmetic and tree traversal.
+Prompts included:
 “Provide OCaml functions with two variables that implement Peano’s axioms for multiplication and division.”
-
-I used ChatGPT
-I reviewed, rewrote, and tested the functions myself to ensure they are correct, purely structural, and consistent with lecture notes.
-This submission contains only immutable, recursive definitions that respect Peano’s axioms.
- 
+“Implement binary tree prune and level traversal functions in OCaml.”
+I reviewed, rewrote, and tested all functions myself to ensure they are purely structural, recursive, and consistent with lecture notes.
+This submission contains only immutable, recursive definitions that respect the course’s functional programming requirements.
