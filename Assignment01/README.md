@@ -50,11 +50,15 @@ Question 1
 Test Successful … 6 tests run.
 Output for Question1:
 9 / 4 = 2, 9 % 4 = 1
+3 * 5 = 15
+7 / 2 = 3, 7 % 2 = 1
 
 Question 2
 Output:
-Level order: 1 2 3 4 5 6
-After prune: 1 2 3
+Level order (original): [1; 2; 3; 4; 5; 6]
+Level order (after prune): [1; 2; 3]
+Single-node level order: [42]
+Single-node after prune (should be empty): []
 ```
 
 ---
