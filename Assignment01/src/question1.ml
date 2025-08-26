@@ -1,4 +1,4 @@
-(* CS 414 – Assignment 01: Peano Arithmetic (OCaml Playground ready) *)
+(* CS 414 – Assignment 01: Peano Arithmetic (OCaml ready) *)
 
 (* --- Peano naturals --- *)
 type nat =
