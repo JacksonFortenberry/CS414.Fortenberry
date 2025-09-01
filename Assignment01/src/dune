@@ -1,6 +1,6 @@
 (library
  (name assignment01)
- (modules question1)
+ (modules question1 question2)
  (inline_tests)
  (preprocess (pps ppx_inline_test)))
 
