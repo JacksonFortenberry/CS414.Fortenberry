@@ -12,3 +12,6 @@
 (executable
  (name question2)
  (modules question2))
+(library
+ (name assignment01)
+ (modules question1 question2 question3 main))
