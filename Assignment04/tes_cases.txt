@@ -1,0 +1,6 @@
+SET $x = 5 + 3
+echo $x
+ls docs
+cd root
+cat notes.txt
+exec prog.exe
