@@ -37,3 +37,6 @@ cat notes.txt
 => {'cmd': 'cat', 'file': 'notes.txt'}
 
 That’s pretty much it — nothing fancy, just enough to follow the assignment.
+Overall, I wrote all code and documentation myself, tested everything to ensure correctness, 
+and followed the assignment instructions closely.  
+The folder structure mirrors the assignment instructions, with one file per question and a README providing an overview.
