@@ -1,0 +1,17 @@
+(* Tokens *)
+COMMAND   = "ls" | "cd" | "cat" | "print" | "exec" ;
+FILENAME  = LETTER , { LETTER } , "." , LETTER , LETTER , LETTER ;   (* 8.3 DOS format *)
+FOLDER    = LETTER , { LETTER } ;                                   (* up to 8 chars *)
+LETTER    = "A".."Z" | "a".."z" ;
+
+(* Grammar rules *)
+command   = ls_cmd | cd_cmd | cat_cmd | print_cmd | exec_cmd ;
+
+ls_cmd    = "ls" , [ FOLDER ] ;
+cd_cmd    = "cd" , [ FOLDER ] ;   (* empty means root folder *)
+cat_cmd   = "cat" , FILENAME ;
+print_cmd = "print" , FILENAME ;
+exec_cmd  = "exec" , FILENAME ;
+
+(* Start symbol *)
+start     = command ;
