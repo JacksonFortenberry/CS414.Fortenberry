@@ -1,9 +1,3 @@
-Perfect 👍 — here’s a short, natural-sounding **README.md** written in a clear, student-style voice that fits your GitHub submission.
-
----
-
-### 📘 **README.md**
-
 # CS 414 – Assignment 05
 
 **Exploring Questions of Type**
@@ -88,4 +82,5 @@ Focus is 2
 * The OCaml version shows how to define a generic data structure with a type variable `'a`.
 
 ---
+
 
