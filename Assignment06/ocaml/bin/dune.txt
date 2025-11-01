@@ -1,0 +1,4 @@
+(executable
+ (public_name monads-demo)
+ (name demo)
+ (libraries monads)) this needs to be a txt right
