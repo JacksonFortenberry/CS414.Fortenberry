@@ -1,0 +1,4 @@
+(executable
+ (name context_fun)
+ (modules strategies context_fun)
+ (libraries))
